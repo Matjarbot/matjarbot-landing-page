@@ -1,0 +1,14 @@
+.snap_color {
+  color: #3da033 !important;
+}
+.ztop_100 {
+  z-index: 100 !important;
+}
+.g-5 {
+  gap: 5px !important;
+}
+.hidden-max-768 {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

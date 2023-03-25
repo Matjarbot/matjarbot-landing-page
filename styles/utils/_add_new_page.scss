@@ -1,0 +1,13 @@
+.add-new-page {
+    .matjarbot-add-new-visibility {
+     .matjarbot-visibility-check {
+        margin-bottom: 10px;
+     }
+    }
+    .add-new-buttons {
+        padding-top: 15px;
+        @media (min-width: 768px) {
+            margin-right: 15px;
+        }
+    }
+}

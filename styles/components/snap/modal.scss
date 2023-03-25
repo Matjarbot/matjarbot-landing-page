@@ -1,0 +1,65 @@
+@import "../../utils/variables";
+
+.snap_modal_container {
+  .ant-btn-default:hover,
+  .ant-btn-default:focus {
+    color: $primary !important;
+    border-color: $primary !important;
+  }
+  .ant-btn-primary:hover,
+  .ant-btn-primary:focus {
+    color: #fff;
+    border-color: $primary !important;
+    background: $primary !important;
+  }
+  .ant-btn-primary {
+    border-color: $primary !important;
+    background: $primary !important;
+  }
+  .ant-modal-content {
+    border-radius: 7px;
+  }
+  .ant-modal-header {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    .ant-modal-title {
+      cursor: pointer;
+    }
+  }
+  .ant-modal-close-x {
+    * {
+      color: $primary !important;
+    }
+  }
+  &.dr {
+    .ant-modal-content {
+      background-color: $dark;
+      color: $offWhite;
+    }
+    .ant-modal-footer {
+      border-top-color: $lightDark;
+    }
+    .ant-btn-primary:hover,
+    .ant-btn-primary:focus {
+      color: black;
+    }
+    .ant-btn {
+      color: black;
+    }
+    .ant-modal-header {
+      .ant-modal-title {
+        color: $offWhite;
+      }
+      border-bottom-color: $lightDark;
+      background-color: $dark;
+    }
+    .ant-btn-default {
+      color: $offWhite;
+      background-color: $lightDark;
+      border-color: $lightDark;
+    }
+  }
+}
+.modal_wrap {
+  background-color: $primaryO1;
+}

@@ -1,0 +1,735 @@
+// Buttons
+
+.btn {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 6px;
+  box-shadow: none;
+  font-weight: 800;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.butt-xs {
+    border-width: 1px;
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 5px 11px;
+
+    .material-icons {
+      font-size: 15px;
+      margin-right: 4px;
+    }
+  }
+
+  &.butt-xs2 {
+    border-width: 1px;
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 5px 11px;
+
+    .material-icons {
+      font-size: 15px;
+      margin-right: 4px;
+    }
+  }
+
+  &.butt-sm {
+    border-width: 2px;
+    font-size: 12px;
+    padding: 6px 13px;
+    border-radius: 5px;
+
+    .material-icons {
+      font-size: 14px;
+      margin-left: 3px;
+    }
+  }
+
+  &.butt-md {
+    border-width: 3px;
+    font-size: 13px;
+    padding: 8px 15px;
+
+    .material-icons {
+      font-size: 15px;
+      margin-right: 4px;
+    }
+  }
+
+  &.butt-lg {
+    border-width: 4px;
+    font-size: 16px;
+    padding: 9px 17px;
+
+    .material-icons {
+      font-size: 16px;
+      margin-right: 5px;
+      margin-top: -4px;
+    }
+  }
+
+  // Styles Colors
+
+  &.butt-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($primary, 5);
+      border-color: darken($primary, 5);
+    }
+
+    &:focus {
+      background-color: darken($primary, 13);
+      border-color: darken($primary, 13);
+    }
+  }
+
+  &.butt-primary2 {
+    background-color: $primary2;
+    border-color: $primary2;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($primary2, 5);
+      border-color: darken($primary2, 5);
+    }
+
+    &:focus {
+      background-color: darken($primary2, 13);
+      border-color: darken($primary2, 13);
+    }
+  }
+
+  &.butt-primary-out {
+    background-color: transparent;
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+      background-color: darken($primary, 5);
+      border-color: darken($primary, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken($primary, 13);
+      border-color: darken($primary, 13);
+      color: #fff;
+    }
+  }
+
+  &.butt-primary2-out {
+    background-color: transparent;
+    border-color: $primary2;
+    color: $primary2;
+
+    &:hover {
+      background-color: darken($primary2, 5);
+      border-color: darken($primary2, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken($primary2, 13);
+      border-color: darken($primary2, 13);
+      color: #fff;
+    }
+  }
+
+  &.butt-dark-out {
+    background-color: transparent;
+    border-color: #222;
+    color: #222;
+
+    &:hover {
+      background-color: darken(#222, 5);
+      border-color: darken(#222, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken(#222, 13);
+      border-color: darken(#222, 13);
+      color: #fff;
+    }
+  }
+
+  &.butt-red {
+    background-color: #c72a2a;
+    border-color: #c72a2a;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#c72a2a, 5);
+      border-color: darken(#c72a2a, 5);
+    }
+
+    &:focus {
+      background-color: darken(#c72a2a, 13);
+      border-color: darken(#c72a2a, 13);
+    }
+  }
+
+  &.butt-red-text {
+    background-color: transparent;
+    border-color: transparent;
+    color: #c72a2a;
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: darken(#c72a2a, 5);
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: transparent;
+      color: darken(#c72a2a, 13);
+    }
+  }
+  &.butt-white-text {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: darken(#fff, 5);
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: transparent;
+      color: darken(#fff, 13);
+    }
+  }
+
+  &.butt-light {
+    background-color: #c9c9c9;
+    border-color: #c9c9c9;
+    color: #222;
+
+    &:hover {
+      background-color: darken(#c9c9c9, 5);
+      border-color: darken(#c9c9c9, 5);
+    }
+
+    &:focus {
+      background-color: darken(#c9c9c9, 13);
+      border-color: darken(#c9c9c9, 13);
+    }
+  }
+
+  &.butt-yellow {
+    background-color: #e6c50d;
+    border-color: #e6c50d;
+    color: #111;
+
+    &:hover {
+      background-color: darken(#e6c50d, 5);
+      border-color: darken(#e6c50d, 5);
+    }
+
+    &:focus {
+      background-color: darken(#e6c50d, 13);
+      border-color: darken(#e6c50d, 13);
+    }
+  }
+
+  &.butt-dark {
+    background-color: #252525;
+    border-color: #252525;
+    color: #f2f2f2;
+
+    &:hover {
+      background-color: darken(#252525, 5);
+      border-color: darken(#252525, 5);
+    }
+
+    &:focus {
+      background-color: darken(#252525, 13);
+      border-color: darken(#252525, 13);
+    }
+  }
+
+  &.butt-blue {
+    background-color: #284baa;
+    border-color: #284baa;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#284baa, 5);
+      border-color: darken(#284baa, 5);
+    }
+
+    &:focus {
+      background-color: darken(#284baa, 13);
+      border-color: darken(#284baa, 13);
+    }
+  }
+
+  &.butt-red-out {
+    background-color: transparent;
+    border-color: #c72a2a;
+    color: #c72a2a;
+
+    &:hover {
+      background-color: darken(#c72a2a, 5);
+      border-color: darken(#c72a2a, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken(#c72a2a, 13);
+      border-color: darken(#c72a2a, 13);
+      color: #fff;
+    }
+  }
+
+  &.butt-green {
+    background-color: #188539;
+    border-color: #188539;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#188539, 5);
+      border-color: darken(#188539, 5);
+    }
+
+    &:focus {
+      background-color: darken(#188539, 13);
+      border-color: darken(#188539, 13);
+    }
+  }
+  &.butt-green-out {
+    background-color: transparent;
+    border-color: #188539;
+    color: #188539;
+
+    &:hover {
+      background-color: darken(#188539, 5);
+      border-color: darken(#188539, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken(#188539, 13);
+      border-color: darken(#188539, 13);
+      color: #fff;
+    }
+  }
+
+  &.butt-purple {
+    background-color: #6d2fa0;
+    border-color: #6d2fa0;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#6d2fa0, 5);
+      border-color: darken(#6d2fa0, 5);
+    }
+
+    &:focus {
+      background-color: darken(#6d2fa0, 13);
+      border-color: darken(#6d2fa0, 13);
+    }
+  }
+  &.butt-purple-out {
+    background-color: transparent;
+    border-color: #6d2fa0;
+    color: #6d2fa0;
+
+    &:hover {
+      background-color: darken(#6d2fa0, 5);
+      border-color: darken(#6d2fa0, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken(#6d2fa0, 13);
+      border-color: darken(#6d2fa0, 13);
+      color: #fff;
+    }
+  }
+
+  &.butt-pink {
+    background-color: #a02f78;
+    border-color: #a02f78;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#a02f78, 5);
+      border-color: darken(#a02f78, 5);
+    }
+
+    &:focus {
+      background-color: darken(#a02f78, 13);
+      border-color: darken(#a02f78, 13);
+    }
+  }
+  &.butt-pink-out {
+    background-color: transparent;
+    border-color: #a02f78;
+    color: #a02f78;
+
+    &:hover {
+      background-color: darken(#a02f78, 5);
+      border-color: darken(#a02f78, 5);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: darken(#a02f78, 13);
+      border-color: darken(#a02f78, 13);
+      color: #fff;
+    }
+  }
+}
+.dark {
+  .btn {
+    // Styles Colors
+    &.butt-primary {
+      background-color: lighten($primary, 20);
+      border-color: lighten($primary, 20);
+      color: #fff;
+
+      &:hover {
+        background-color: lighten(lighten($primary, 20), 5);
+        border-color: lighten(lighten($primary, 20), 5);
+      }
+
+      &:focus {
+        background-color: lighten(lighten($primary, 20), 13);
+        border-color: lighten(lighten($primary, 20), 13);
+      }
+    }
+
+    &.butt-primary2 {
+      background-color: lighten($primary2, 20);
+      border-color: lighten($primary2, 20);
+      color: #fff;
+
+      &:hover {
+        background-color: lighten(lighten($primary2, 20), 5);
+        border-color: lighten(lighten($primary2, 20), 5);
+      }
+
+      &:focus {
+        background-color: lighten(lighten($primary2, 20), 13);
+        border-color: lighten(lighten($primary2, 20), 13);
+      }
+    }
+
+    &.butt-primary-out {
+      background-color: transparent;
+      border-color: lighten($primary, 20);
+      color: lighten($primary, 20);
+
+      &:hover {
+        background-color: lighten(lighten($primary, 20), 5);
+        border-color: lighten(lighten($primary, 20), 5);
+        color: #fff;
+      }
+
+      &:focus {
+        background-color: lighten(lighten($primary, 20), 13);
+        border-color: lighten(lighten($primary, 20), 13);
+        color: #fff;
+      }
+    }
+
+    &.butt-primary2-out {
+      background-color: transparent;
+      border-color: lighten($primary2, 20);
+      color: lighten($primary2, 20);
+
+      &:hover {
+        background-color: lighten(lighten($primary2, 20), 5);
+        border-color: lighten(lighten($primary2, 20), 5);
+        color: #fff;
+      }
+
+      &:focus {
+        background-color: lighten(lighten($primary2, 20), 13);
+        border-color: lighten(lighten($primary2, 20), 13);
+        color: #fff;
+      }
+    }
+
+    &.butt-dark-out {
+      background-color: transparent;
+      border-color: #f1f1f1;
+      color: #222;
+
+      &:hover {
+        background-color: lighten(#f1f1f1, 5);
+        border-color: lighten(#f1f1f1, 5);
+        color: #111;
+      }
+
+      &:focus {
+        background-color: lighten(#f1f1f1, 13);
+        border-color: lighten(#f1f1f1, 13);
+        color: #111;
+      }
+    }
+
+    &.butt-red {
+      background-color: #f39e9e;
+      border-color: #f39e9e;
+      color: #5f1111;
+
+      &:hover {
+        background-color: lighten(#f39e9e, 5);
+        border-color: lighten(#f39e9e, 5);
+      }
+
+      &:focus {
+        background-color: lighten(#f39e9e, 13);
+        border-color: lighten(#f39e9e, 13);
+      }
+    }
+
+    &.butt-red-text {
+      background-color: transparent;
+      border-color: transparent;
+      color: #f39e9e;
+
+      &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: lighten(#f39e9e, 5);
+      }
+
+      &:focus {
+        background-color: transparent;
+        border-color: transparent;
+        color: lighten(#f39e9e, 13);
+      }
+    }
+    &.butt-white-text {
+      background-color: transparent;
+      border-color: transparent;
+      color: #111;
+
+      &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: lighten(#111, 5);
+      }
+
+      &:focus {
+        background-color: transparent;
+        border-color: transparent;
+        color: lighten(#111, 13);
+      }
+    }
+
+    &.butt-light {
+      background-color: #222;
+      border-color: #222;
+      color: #fff;
+
+      &:hover {
+        background-color: lighten(#222, 5);
+        border-color: lighten(#222, 5);
+      }
+
+      &:focus {
+        background-color: lighten(#222, 13);
+        border-color: lighten(#222, 13);
+      }
+    }
+
+    &.butt-dark {
+      background-color: #f1f1f1;
+      border-color: #f1f1f1;
+      color: #212121;
+
+      &:hover {
+        background-color: lighten(#f1f1f1, 5);
+        border-color: lighten(#f1f1f1, 5);
+      }
+
+      &:focus {
+        background-color: lighten(#f1f1f1, 13);
+        border-color: lighten(#f1f1f1, 13);
+      }
+    }
+
+    &.butt-blue {
+      background-color: #9eb3ee;
+      border-color: #9eb3ee;
+      color: #112660;
+
+      &:hover {
+        background-color: lighten(#9eb3ee, 5);
+        border-color: lighten(#9eb3ee, 5);
+      }
+
+      &:focus {
+        background-color: lighten(#9eb3ee, 13);
+        border-color: lighten(#9eb3ee, 13);
+      }
+    }
+
+    &.butt-red-out {
+      background-color: transparent;
+      border-color: #ec9c9c;
+      color: #ec9c9c;
+
+      &:hover {
+        background-color: lighten(#ec9c9c, 5);
+        border-color: lighten(#ec9c9c, 5);
+        color: #3a0808;
+      }
+
+      &:focus {
+        background-color: lighten(#ec9c9c, 13);
+        border-color: lighten(#ec9c9c, 13);
+        color: #3a0808;
+      }
+    }
+
+    &.butt-green {
+      background-color: #93c8a3;
+      border-color: #93c8a3;
+      color: #0c4f20;
+
+      &:hover {
+        background-color: lighten(#93c8a3, 5);
+        border-color: lighten(#93c8a3, 5);
+      }
+
+      &:focus {
+        background-color: lighten(#93c8a3, 13);
+        border-color: lighten(#93c8a3, 13);
+      }
+    }
+    &.butt-green-out {
+      background-color: transparent;
+      border-color: #93c8a3;
+      color: #93c8a3;
+
+      &:hover {
+        background-color: lighten(#93c8a3, 5);
+        border-color: lighten(#93c8a3, 5);
+        color: #0c4e20;
+      }
+
+      &:focus {
+        background-color: lighten(#93c8a3, 13);
+        border-color: lighten(#93c8a3, 13);
+        color: #073b16;
+      }
+    }
+
+    &.butt-purple {
+      background-color: #bca3d1;
+      border-color: #bca3d1;
+      color: #260c3b;
+
+      &:hover {
+        background-color: lighten(#bca3d1, 5);
+        border-color: lighten(#bca3d1, 5);
+      }
+
+      &:focus {
+        background-color: lighten(#bca3d1, 13);
+        border-color: lighten(#bca3d1, 13);
+      }
+    }
+    &.butt-purple-out {
+      background-color: transparent;
+      border-color: #bca3d1;
+      color: #bca3d1;
+
+      &:hover {
+        background-color: darken(#bca3d1, 5);
+        border-color: darken(#bca3d1, 5);
+        color: #290e40;
+      }
+
+      &:focus {
+        background-color: darken(#bca3d1, 13);
+        border-color: darken(#bca3d1, 13);
+        color: #290e40;
+      }
+    }
+
+    &.butt-pink {
+      background-color: #e7b2d4;
+      border-color: #e7b2d4;
+      color: #4c0f37;
+
+      &:hover {
+        background-color: darken(#e7b2d4, 5);
+        border-color: darken(#e7b2d4, 5);
+      }
+
+      &:focus {
+        background-color: darken(#e7b2d4, 13);
+        border-color: darken(#e7b2d4, 13);
+      }
+    }
+    &.butt-pink-out {
+      background-color: transparent;
+      border-color: #e7b2d4;
+      color: #e7b2d4;
+
+      &:hover {
+        background-color: darken(#e7b2d4, 5);
+        border-color: darken(#e7b2d4, 5);
+        color: #471334;
+      }
+
+      &:focus {
+        background-color: darken(#e7b2d4, 13);
+        border-color: darken(#e7b2d4, 13);
+        color: #471334;
+      }
+    }
+  }
+}
+.ltr_lang {
+  .btn {
+  
+    &.butt-xs {
+      .material-icons {
+        margin-left: 4px;
+      }
+    }
+  
+    &.butt-xs2 {
+      .material-icons {
+        margin-left: 4px;
+      }
+    }
+  
+    &.butt-sm {
+      .material-icons {
+        margin-left: 3px;
+      }
+    }
+  
+    &.butt-md {
+  
+      .material-icons {
+        margin-left: 4px;
+      }
+    }
+  
+    &.butt-lg {
+      .material-icons {
+        margin-left: 5px;
+      }
+    }
+  }
+}

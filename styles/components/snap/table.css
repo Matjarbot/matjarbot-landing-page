@@ -1,0 +1,98 @@
+.rtl_lang .snap_table_container .ant-table-thead > tr > th:first-child {
+  border-top-right-radius: 7px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.rtl_lang .snap_table_container .ant-table-thead > tr > th:last-child {
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.snap_table_container {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.snap_table_container * {
+  border-radius: 7px;
+}
+
+.snap_table_container .ant-table-thead > tr > th {
+  background-color: #ebf8e9;
+}
+
+.snap_table_container .ant-table-thead > tr > th:first-child {
+  border-top-left-radius: 7px !important;
+}
+
+.snap_table_container .ant-table-thead > tr > th:last-child {
+  border-top-right-radius: 7px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.snap_table_container .ant-pagination-item:hover {
+  border-color: #3da033;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.snap_table_container .ant-pagination-item:hover a {
+  color: #3da033 !important;
+}
+
+.snap_table_container .ant-table-thead {
+  overflow: hidden !important;
+  border-radius: 10px !important;
+}
+
+.snap_table_container .ant-table-tbody > tr.ant-table-row:hover > td,
+.snap_table_container .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: #f9fdf9;
+}
+
+.snap_table_container .ant-pagination-item-active {
+  border-color: #3da033;
+  border-radius: 7px;
+}
+
+.snap_table_container .ant-pagination-item-link {
+  border-radius: 7px;
+}
+
+.snap_table_container .ant-table-cell {
+  border-radius: 0px !important;
+}
+
+.snap_table_container.dr .ant-table-thead > tr > th {
+  background-color: #44b339 !important;
+  color: white;
+  border-color: #424141;
+}
+
+.snap_table_container.dr .ant-table-thead
+> tr
+> th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  background-color: #3c9c32;
+}
+
+.snap_table_container.dr .ant-table-cell {
+  color: #e8eaed !important;
+  background-color: #1c1c1c !important;
+}
+
+.snap_table_container.dr .ant-table-tbody > tr.ant-table-row:hover > td,
+.snap_table_container.dr .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: #12300f !important;
+}
+
+.snap_table_container.dr .ant-table-tbody > tr > td {
+  border-color: #424141;
+}
+
+.snap_table_container.dr .ant-pagination-item-active,
+.snap_table_container.dr .ant-pagination-item,
+.snap_table_container.dr .ant-pagination-item-link {
+  background-color: #1c1c1c;
+  color: #e8eaed;
+}
+/*# sourceMappingURL=table.css.map */

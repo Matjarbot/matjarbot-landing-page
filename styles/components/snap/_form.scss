@@ -1,0 +1,291 @@
+.app-form {
+  padding: 12px 0;
+
+  .label-block {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    &.disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .app-input {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 19px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s;
+
+    &::placeholder {
+      color: #ddd;
+    }
+
+    &:hover {
+      border: 1px solid #ccc;
+    }
+
+    &:focus {
+      transition: all 0.3s;
+      outline: none;
+      border: 1px solid $primary;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+
+    @keyframes formscale {
+      0% {
+        transform: scale(1.08);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    &.has-error {
+      animation: formscale 0.4s;
+      border: 1px solid rgb(240, 53, 53);
+    }
+  }
+
+  .app-form-note {
+    margin-top: 5px;
+    padding: 6px 0;
+
+    .text {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    &.form-note-error {
+      .text {
+        color: rgb(196, 61, 61);
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin: 20px 0;
+  }
+
+  &.sm {
+    padding: 11px 0;
+
+    .label-block {
+      font-size: 13px;
+    }
+
+    .app-input {
+      padding: 8px 17px;
+      font-size: 13px;
+      border-radius: 5px;
+    }
+
+    .app-form-note {
+      .text {
+        font-size: 11px;
+      }
+    }
+  }
+  &.xs {
+    padding: 10px 0;
+
+    .label-block {
+      font-size: 12px;
+    }
+
+    .app-inputs {
+      padding: 8px 15px;
+      font-size: 11px;
+      border-radius: 5px;
+    }
+
+    .app-form-note {
+      .text {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+// Forms Style
+.app-inputs {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 13px;
+  display: block;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+
+  &:hover {
+    border: 1px solid #ccc;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+
+  &.has-error {
+    animation: formscale 0.4s;
+    border: 1px solid rgb(240, 53, 53);
+  }
+  &.disabled {
+    opacity: 0.7;
+    border: 1px solid rgb(234, 234, 234);
+    &::placeholder {
+      color: rgb(240, 240, 240);
+    }
+    color: lightgray;
+  }
+
+  &.sm {
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+}
+
+.text-nav {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.icon-nav {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.form-toggle-password {
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  left: 10px;
+  top: 45px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.11);
+  justify-content: center;
+  transition: all 0.3s;
+  color: #222;
+
+  .material-icons {
+    font-size: 17px;
+  }
+
+  &:hover {
+    color: #000;
+    background-color: #f7f7f7;
+    transition: all 0.3s;
+  }
+
+  &.is-active {
+    background-color: #f1f1f1;
+    color: #666;
+  }
+}
+.dark {
+  .app-form {
+    .label-block {
+      color: #ddd;
+    }
+
+    .app-input {
+      background-color: #181818;
+      border: 1px solid #121212;
+      color: #f9f9f9;
+      &::placeholder {
+        color: #212121;
+      }
+
+      &:hover {
+        border: 1px solid #212121;
+      }
+
+      &:focus {
+        border: 1px solid lighten($primary, 40);
+
+        &::placeholder {
+          color: #292929;
+        }
+      }
+
+      &.has-error {
+        border: 1px solid rgb(255, 147, 147);
+      }
+    }
+
+    .app-form-note {
+      .text {
+        color: #ddd;
+      }
+
+      &.form-note-error {
+        .text {
+          color: rgb(249, 158, 158);
+        }
+      }
+    }
+  }
+
+  // Forms Style
+  .app-inputs {
+    border: 1px solid #121212;
+    background-color: #181818;
+    color: #f2f2f2;
+    &:hover {
+      border: 1px solid #212121;
+    }
+    &::placeholder {
+        color: #313131;
+      }
+    &:focus {
+      border: 1px solid lighten($primary, 40);
+    }
+
+    &.has-error {
+      border: 1px solid rgb(255, 158, 158);
+    }
+    &.disabled {
+      border: 1px solid #1f1f1f;
+      &::placeholder {
+        color: #191919;
+      }
+      color: 181818;
+    }
+  }
+
+  .form-toggle-password {
+    background-color: #131313;
+    box-shadow: 3px 5px 10px rgba(217, 217, 217, 0.11);
+    color: #f1f1f1;
+
+    &:hover {
+      color: #fff;
+      background-color: #171717;
+    }
+
+    &.is-active {
+      background-color: #171717;
+      color: #ddd;
+    }
+  }
+}

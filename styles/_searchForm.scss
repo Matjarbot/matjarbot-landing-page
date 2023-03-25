@@ -1,0 +1,36 @@
+.matjarbot-search-form {
+  position: relative;
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    color: #888;
+  }
+}
+.dark {
+  .matjarbot-search-form {
+    position: relative;
+    input {
+      color: $offWhite !important;
+      background-color: $dark;
+      &::placeholder {
+        color: $offWhite !important;
+      }
+    }
+    .search-icon {
+      position: absolute;
+      left: 15px;
+      top: 7px;
+      color: $offWhite !important;
+    }
+  }
+}
+.ltr_lang {
+  .matjarbot-search-form {
+    .search-icon {
+      left: auto;
+
+      right: 15px;
+    }
+  }
+}

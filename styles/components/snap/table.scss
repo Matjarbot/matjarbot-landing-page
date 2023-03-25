@@ -1,0 +1,87 @@
+@import "../../utils/variables";
+.rtl_lang {
+  .snap_table_container {
+    .ant-table-thead > tr > th {
+      &:first-child {
+        border-top-right-radius: 7px !important;
+        border-top-left-radius: 0px !important;
+      }
+      &:last-child {
+        border-top-left-radius: 7px !important;
+        border-top-right-radius: 0px !important;
+      }
+    }
+  }
+}
+.snap_table_container {
+  border-radius: 7px;
+  overflow: hidden;
+  * {
+    border-radius: 7px;
+  }
+  .ant-table-thead > tr > th {
+    background-color: lighten($primary, 53);
+    // border-top-right-radius: 7px !important;
+    &:first-child {
+      border-top-left-radius: 7px !important;
+    }
+    &:last-child {
+      border-top-right-radius: 7px !important;
+      border-top-left-radius: 0px !important;
+    }
+  }
+  .ant-pagination-item:hover {
+    border-color: $primary;
+    transition: all 0.3s;
+  }
+  .ant-pagination-item:hover a {
+    color: $primary !important;
+  }
+  .ant-table-thead {
+    overflow: hidden !important;
+    border-radius: 10px !important;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td,
+  .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background: lighten($primary, 57);
+  }
+  .ant-pagination-item-active {
+    border-color: $primary;
+    border-radius: 7px;
+  }
+  .ant-pagination-item-link {
+    border-radius: 7px;
+  }
+  .ant-table-cell {
+    border-radius: 0px !important;
+  }
+  &.dr {
+    .ant-table-thead > tr > th {
+      background-color: lighten($primary, 5) !important;
+      color: white;
+      border-color: $lightDark;
+    }
+    .ant-table-thead
+      > tr
+      > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      background-color: darken($primary, 1);
+    }
+    .ant-table-cell {
+      color: $offWhite !important;
+      background-color: $dark !important;
+    }
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background: darken($primary, 29) !important;
+    }
+    .ant-table-tbody > tr > td {
+      border-color: $lightDark;
+    }
+    .ant-pagination-item-active,
+    .ant-pagination-item,
+    .ant-pagination-item-link {
+      background-color: $dark;
+      color: $offWhite;
+    }
+  }
+}

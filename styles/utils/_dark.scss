@@ -1,0 +1,124 @@
+.dark {
+  .sb-navbar {
+    background-color: #141414;
+    .sb-navbar-content {
+      .sb-navbar-right {
+        .sb-navbar-nav {
+          li {
+            a {
+              color: #888;
+              .material-icons {
+                color: #f3f3f3;
+              }
+              &:hover {
+                color: #fff;
+              }
+            }
+            &.active {
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .sb-navbar-left {
+        .sb-navbar-buttons {
+          display: flex;
+        }
+      }
+    }
+  }
+  // Hero
+  .sb-hero {
+    background-color: #111 !important;
+    .sb-hero-content {
+      .main-title {
+        color: #fff;
+      }
+      .main-text {
+        color: #fff;
+      }
+      .butt-inner {
+        color: #fff;
+      }
+    }
+
+    .content {
+      background-color: #121212;
+    }
+  }
+  .sb-clients-logos {
+    background-color: #000;
+  }
+  //Chat bot
+  .sb-botshat {
+    border: 10px solid #080808;
+    box-shadow: -7px 5px 16px rgba(255, 255, 255, 0.097);
+
+    border-top-width: 19px;
+    background-color: #19191946;
+    &::after {
+      border: 9px solid #080808;
+      background-color: #151515;
+    }
+    .sb-botshat-list {
+      li {
+        .text {
+          background-color: #f6f6f6;
+        }
+        &.from {
+          .text {
+            background-color: $primary;
+            color: #212121;
+          }
+        }
+      }
+    }
+  }
+
+  // Features Aside
+  .feature-inner {
+    background-color: #020202;
+    .feature-item {
+      .title {
+        color: #fff;
+      }
+      .text {
+        li {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .sb-landing-about {
+    background-color: #030303;
+    .main-title {
+      font-size: 23px;
+      color: #fff;
+    }
+    .about-list {
+      li {
+        padding: 10px 0;
+        color: #fff;
+      }
+    }
+  }
+  // Footer
+  .sb-footer {
+    background-color: #111;
+    .copy-text {
+      color: #f1f1f1;
+    }
+    .footer-links {
+      li {
+        a {
+          color: #f7f7f7;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
