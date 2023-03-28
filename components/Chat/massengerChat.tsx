@@ -29,7 +29,7 @@ import React, { useRef, useEffect } from 'react';
     return (
         <>
 
-            <div id="fb-root"></div>
+            <div id="fb-root" className='sb-fixed-whatsapp'></div>
             <div ref={MessengerRef} id="fb-customer-chat" className="fb-customerchat"></div>
         </>
     );
