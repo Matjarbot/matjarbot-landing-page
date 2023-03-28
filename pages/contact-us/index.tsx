@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         tools={
           <>
             <a
-              href="https://api.whatsapp.com/send/?phone=962799849386"
+              href="https://api.whatsapp.com/send/?phone=962791082688"
               className={`btn butt-sm flex-center ${
                 isDark == "light" ? "butt-dark" : "butt-light"
               }`}
