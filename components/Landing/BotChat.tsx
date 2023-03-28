@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Catalog from "../../public/catalog.png";
 import Order from "../../public/order.png";
+// import Placeholder from "../../public/placeholder.jpeg";
 
 const dataMessages = [
   {
@@ -11,6 +12,7 @@ const dataMessages = [
     text: "erferfe rouwo eudnwe",
   },
 ];
+//placeholder.jpeg
 function BotChat() {
   return (
     <motion.div
@@ -19,6 +21,8 @@ function BotChat() {
       animate={{ y: 0, rotate: 0, opacity: 1 }}
       className="sb-botshat"
     >
+       {/* <div><Image className= "img-chat" src={Placeholder} width={200} height={150}  alt="" /> </div> */}
+
       <ul style={{ overflow: "hidden" }} className="sb-botshat-list">
         <motion.li
           transition={{ duration: 1, type: "spring", delay: 0.6 }}

@@ -3,63 +3,50 @@
   color: #349946 !important;
   border-color: #349946 !important;
 }
-
 .snap_modal_container .ant-btn-primary:hover,
 .snap_modal_container .ant-btn-primary:focus {
   color: #fff;
   border-color: #349946 !important;
   background: #349946 !important;
 }
-
 .snap_modal_container .ant-btn-primary {
   border-color: #349946 !important;
   background: #349946 !important;
 }
-
 .snap_modal_container .ant-modal-content {
   border-radius: 7px;
 }
-
 .snap_modal_container .ant-modal-header {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-
 .snap_modal_container .ant-modal-header .ant-modal-title {
   cursor: pointer;
 }
-
 .snap_modal_container .ant-modal-close-x * {
   color: #349946 !important;
 }
-
 .snap_modal_container.dr .ant-modal-content {
   background-color: #1c1c1c;
   color: #e8eaed;
 }
-
 .snap_modal_container.dr .ant-modal-footer {
   border-top-color: #424141;
 }
-
 .snap_modal_container.dr .ant-btn-primary:hover,
 .snap_modal_container.dr .ant-btn-primary:focus {
   color: black;
 }
-
 .snap_modal_container.dr .ant-btn {
   color: black;
 }
-
 .snap_modal_container.dr .ant-modal-header {
   border-bottom-color: #424141;
   background-color: #1c1c1c;
 }
-
 .snap_modal_container.dr .ant-modal-header .ant-modal-title {
   color: #e8eaed;
 }
-
 .snap_modal_container.dr .ant-btn-default {
   color: #e8eaed;
   background-color: #424141;
@@ -68,5 +55,4 @@
 
 .modal_wrap {
   background-color: rgba(61, 160, 51, 0.1);
-}
-/*# sourceMappingURL=modal.css.map */
+}/*# sourceMappingURL=modal.css.map */

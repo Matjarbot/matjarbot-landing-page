@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   const { t } = useTranslation();
@@ -9,13 +9,13 @@ function Footer() {
     <div className="sb-footer">
       <ul className="socials-links">
         <li>
-          <a href="https://web.facebook.com/matjarbotsys" target={'_blank'} rel="noopener noreferrer">
+          <a href="https://web.facebook.com/matjarbot" target={'_blank'} rel="noopener noreferrer">
             <FaFacebook />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/matjarbotsys" target={'_blank'} rel="noopener noreferrer">
-            <FaTwitter />
+          <a href="https://www.youtube.com/channel/UChfW1Rb2mcMtMwHpQZlH_sw" target={'_blank'} rel="noopener noreferrer">
+            <FaYoutube />
           </a>
         </li>
         <li>
@@ -24,7 +24,7 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/matjarbotsys/" target={'_blank'} rel="noopener noreferrer">
+          <a href="https://www.instagram.com/matjarbot/" target={'_blank'} rel="noopener noreferrer">
             <FaInstagram />
           </a>
         </li>

@@ -6,6 +6,10 @@ import { useTranslation } from "react-i18next";
 import useSWR from "swr";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import LandingLayout from "../../layouts/LandingLayout";
+//import { useAppSelector } from "../../store/hooks";
+
+
+const lang = Cookies.get("lang");
 
 interface Item {
   id: any;
@@ -354,7 +358,6 @@ const Home: NextPage = () => {
       },
     ],
   };
-  const lang = Cookies.get("lang");
 
   function switchValue(value: any, unit: string) {
     switch (value) {

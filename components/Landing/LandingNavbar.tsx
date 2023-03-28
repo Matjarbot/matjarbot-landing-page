@@ -126,8 +126,8 @@ function LandingNavbar() {
             <a className="sb-logo">
               <img
                 src={isDarkMode ? "/logo_invert.png" : "/logo.png"}
-                height={80}
-                width={120}
+                height={65}
+                width={65}
                 alt=""
               />
             </a>
