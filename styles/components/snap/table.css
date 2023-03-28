@@ -31,13 +31,13 @@
 }
 
 .snap_table_container .ant-pagination-item:hover {
-  border-color: #3da033;
+  border-color: #349946;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .snap_table_container .ant-pagination-item:hover a {
-  color: #3da033 !important;
+  color: #349946 !important;
 }
 
 .snap_table_container .ant-table-thead {
@@ -51,7 +51,7 @@
 }
 
 .snap_table_container .ant-pagination-item-active {
-  border-color: #3da033;
+  border-color: #349946;
   border-radius: 7px;
 }
 

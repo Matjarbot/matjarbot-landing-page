@@ -34,7 +34,7 @@ const AppLayout = ({
   const { Content, Footer, Sider } = Layout;
   const [collapsed, setCollapsed] = useState(false);
   const antIcon = (
-    <LoadingOutlined style={{ fontSize: 64, color: "#3da033" }} spin />
+    <LoadingOutlined style={{ fontSize: 64, color: "#349946" }} spin />
   );
 
   return (

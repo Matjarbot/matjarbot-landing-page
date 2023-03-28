@@ -11,6 +11,7 @@ import { ScrollingCarousel } from "@trendyol-js/react-carousel";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import FixedWhatapp from "../components/Landing/FixedWhatapp";
 import Head from "next/head";
+import MassengerChat from "../components/Chat/massengerChat";
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
@@ -46,8 +47,10 @@ const Home: NextPage = () => {
             <img src={isDark == "dark" ? "/l9_invert.png" : "/l9.png"} alt="" />
         </ScrollingCarousel>
       </div>
-      <Features />
+      <Features />     
+
       <LandingAbout />
+       <MassengerChat/>
       <FixedWhatapp />
     </LandingLayout>
   );

@@ -59,7 +59,7 @@ const Home: NextPage = () => {
     },
   });
   const antIcon = (
-    <LoadingOutlined style={{ fontSize: 31, color: "#3da033" }} spin />
+    <LoadingOutlined style={{ fontSize: 31, color: "#349946" }} spin />
   );
   const { t } = useTranslation();
   const isDark = useAppSelector((state) => state.theme.type);

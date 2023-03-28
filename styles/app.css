@@ -3,7 +3,7 @@
 }
 
 .snap_color {
-  color: #3da033 !important;
+  color: #349946 !important;
 }
 
 .ztop_100 {
@@ -108,7 +108,7 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;
-  border: 1px solid #3da033;
+  border: 1px solid #349946;
   -webkit-box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.052);
           box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.052);
 }
@@ -611,7 +611,7 @@
 }
 
 .sb-botshat .sb-botshat-list li.from .text {
-  background-color: #3da033;
+  background-color: #349946;
   color: #fff;
 }
 
@@ -1261,7 +1261,7 @@
 }
 
 .otp-code-form .large-code-input:focus {
-  border: 2px solid #3da033;
+  border: 2px solid #349946;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1315,20 +1315,20 @@
 
 .snap_modal_container .ant-btn-default:hover,
 .snap_modal_container .ant-btn-default:focus {
-  color: #3da033 !important;
-  border-color: #3da033 !important;
+  color: #349946 !important;
+  border-color: #349946 !important;
 }
 
 .snap_modal_container .ant-btn-primary:hover,
 .snap_modal_container .ant-btn-primary:focus {
   color: #fff;
-  border-color: #3da033 !important;
-  background: #3da033 !important;
+  border-color: #349946 !important;
+  background: #349946 !important;
 }
 
 .snap_modal_container .ant-btn-primary {
-  border-color: #3da033 !important;
-  background: #3da033 !important;
+  border-color: #349946 !important;
+  background: #349946 !important;
 }
 
 .snap_modal_container .ant-modal-content {
@@ -1345,7 +1345,7 @@
 }
 
 .snap_modal_container .ant-modal-close-x * {
-  color: #3da033 !important;
+  color: #349946 !important;
 }
 
 .snap_modal_container.dr .ant-modal-content {
@@ -1418,13 +1418,13 @@
 }
 
 .snap_table_container .ant-pagination-item:hover {
-  border-color: #3da033;
+  border-color: #349946;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .snap_table_container .ant-pagination-item:hover a {
-  color: #3da033 !important;
+  color: #349946 !important;
 }
 
 .snap_table_container .ant-table-thead {
@@ -1438,7 +1438,7 @@
 }
 
 .snap_table_container .ant-pagination-item-active {
-  border-color: #3da033;
+  border-color: #349946;
   border-radius: 7px;
 }
 
@@ -1496,7 +1496,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #3da033 !important;
+  background: #349946 !important;
   -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
           animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
@@ -1645,7 +1645,7 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;
-  border: 1px solid #3da033;
+  border: 1px solid #349946;
 }
 
 .app-form .app-input:focus::-webkit-input-placeholder {
@@ -1766,7 +1766,7 @@
 }
 
 .app-inputs:focus {
-  border: 1px solid #3da033;
+  border: 1px solid #349946;
 }
 
 .app-inputs.has-error {
@@ -2066,8 +2066,8 @@
 }
 
 .btn.butt-primary {
-  background-color: #3da033;
-  border-color: #3da033;
+  background-color: #349946;
+  border-color: #349946;
   color: #fff;
 }
 
@@ -2099,8 +2099,8 @@
 
 .btn.butt-primary-out {
   background-color: transparent;
-  border-color: #3da033;
-  color: #3da033;
+  border-color: #349946;
+  color: #349946;
 }
 
 .btn.butt-primary-out:hover {
@@ -2741,16 +2741,16 @@ body {
 }
 
 .ant-checkbox-checked::after {
-  border: 1px solid #3da033;
+  border: 1px solid #349946;
 }
 
 input:focus + .ant-checkbox-inner {
-  border-color: #3da033;
+  border-color: #349946;
 }
 
 .ant-checkbox-checked .ant-checkbox-inner {
-  background-color: #3da033;
-  border-color: #3da033;
+  background-color: #349946;
+  border-color: #349946;
 }
 
 .row {
@@ -3025,7 +3025,7 @@ a:hover {
   padding: 10px 15px;
   border-radius: 6px;
   border: 1px solid #f1f1f1;
-  border-right: 3px solid #3da033;
+  border-right: 3px solid #349946;
   background-color: #fff;
   -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.036);
           box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.036);
@@ -3351,7 +3351,7 @@ a:hover {
 }
 
 .app-new-header.primary .title::after {
-  background-color: #3da033;
+  background-color: #349946;
 }
 
 .app-new-header.primary2 .title::after {
@@ -3480,7 +3480,7 @@ a:hover {
 }
 
 .app-center-header.primary .title::after {
-  background-color: #3da033;
+  background-color: #349946;
 }
 
 .app-center-header.primary2 .title::after {
@@ -3797,7 +3797,7 @@ a:hover {
 }
 
 .circular-btn.primary {
-  background-color: #3da033;
+  background-color: #349946;
   color: #fff;
 }
 
@@ -4033,7 +4033,7 @@ a:hover {
 }
 
 .dark .sb-botshat .sb-botshat-list li.from .text {
-  background-color: #3da033;
+  background-color: #349946;
   color: #212121;
 }
 
@@ -4080,7 +4080,7 @@ a:hover {
 }
 
 .ltr_lang .new-alert {
-  border-left: 3px solid #3da033;
+  border-left: 3px solid #349946;
 }
 
 .ltr_lang .new-alert .new-alert-icon {

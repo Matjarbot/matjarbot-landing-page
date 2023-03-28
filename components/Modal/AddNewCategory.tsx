@@ -10,7 +10,7 @@ function AddNewCategory({
   featchData,
 }: any): ReactElement {
   const antIcon = (
-    <LoadingOutlined style={{ fontSize: 31, color: "#3da033" }} spin />
+    <LoadingOutlined style={{ fontSize: 31, color: "#349946" }} spin />
   );
   return (
     <motion.div

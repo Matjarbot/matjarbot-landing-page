@@ -51,7 +51,7 @@ const AddNew: NextPage = () => {
     console.log(`checked = ${e.target.checked}`);
   };
   const antIcon = (
-    <LoadingOutlined style={{ fontSize: 50, color: "#3da033" }} spin />
+    <LoadingOutlined style={{ fontSize: 50, color: "#349946" }} spin />
   );
   return (
     <AppLayout className="add-new-page">

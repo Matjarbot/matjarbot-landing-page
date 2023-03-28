@@ -45,7 +45,7 @@ const Home: NextPage = () => {
   const { t } = useTranslation();
 
   const antIcon = (
-    <LoadingOutlined style={{ fontSize: 50, color: "#3da033" }} spin />
+    <LoadingOutlined style={{ fontSize: 50, color: "#349946" }} spin />
   );
   return (
     <AppLayout>

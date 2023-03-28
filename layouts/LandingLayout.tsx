@@ -31,7 +31,7 @@ const LandingLayout = ({
     // socket disconnet onUnmount if exists
   }, [Router]);
   const antIcon = (
-    <LoadingOutlined style={{ fontSize: 64, color: "#3da033" }} spin />
+    <LoadingOutlined style={{ fontSize: 64, color: "#349946" }} spin />
   );
 
   return (
