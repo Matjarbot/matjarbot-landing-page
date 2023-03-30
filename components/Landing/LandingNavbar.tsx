@@ -125,9 +125,10 @@ function LandingNavbar() {
           <Link href={"/"}>
             <a className="sb-logo">
               <img
+                className="my-2"
                 src={isDarkMode ? "/logo_invert.png" : "/logo.png"}
-                height={65}
-                width={65}
+                height={40}
+                width={50}
                 alt=""
               />
             </a>
@@ -181,7 +182,7 @@ function LandingNavbar() {
               <button
                 className="circular-btn sm gray mx-1"
                 onClick={() => {
-                  setSwitchLangs(!switchLangs)
+                  setSwitchLangs(!switchLangs);
                   //Cookies.set('lang')
                 }}
                 type="button"

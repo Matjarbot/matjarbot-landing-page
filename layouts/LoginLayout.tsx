@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
 import PropTypes from "prop-types";
 import Image from "next/image";
-import Logo from "../public/logo.png";
 import Link from "next/link";
 
 const LoginLayout = ({ children }: any): ReactElement => {
@@ -28,7 +27,7 @@ const LoginLayout = ({ children }: any): ReactElement => {
     <div className="app-login-layout">
       <div className="app-panel">
         <div className="app-panel-header">
-          <Image src={Logo} width={120} height={45} alt="matjarbot" />
+          <Image src={"./logo.png"} width={120} height={45} alt="matjarbot" />
         </div>
         <div className="app-panel-content">{children}</div>
         <div className="app-panel-footer">
