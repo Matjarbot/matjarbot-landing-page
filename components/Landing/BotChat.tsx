@@ -87,3 +87,21 @@ function BotChat() {
 }
 
 export default BotChat;
+
+
+/*
+صور منتجات الكيك 
+https://i.ibb.co/4NFzYM3/3fab24ef28aa2ae31e87bc8f22cab2ca-w750-h500.jpg
+https://i.ibb.co/Jy94nmb/7b7b9ffb4aeee76a1ce66a7ce2cdfd5a-w750-h750.jpg
+https://i.ibb.co/NZBK09p/66ac9e5ee3e57405c88de30141a24a0d-w750-h500.jpg
+https://i.ibb.co/rwSNy0F/4481c2aab55da65fabc1cdb9bf7eb87a-w750-h500.jpg
+https://i.ibb.co/Y49jG2Y/1388739219-5-1-2.jpg
+https://i.ibb.co/QNhPFW4/aa0afb02d42de91538a4b8e943510dc3-w750-h500.jpg
+https://i.ibb.co/CM0vNPk/b04018cb12fa68711f2cc04c75720171-w750-h750.jpg
+https://i.ibb.co/9Y0jgFd/e8ca5677ad850a77cbc5ff82026812ce-w750-h500.jpg
+https://i.ibb.co/FqhFfgn/f9e28c0269a0be8bb43b88d54c158b14-w750-h500.jpg
+https://i.ibb.co/JFMgzJr/nutella-cheese-cake.jpg
+https://i.ibb.co/7G6Cx2p/image.jpg
+https://i.ibb.co/HFKf3m7/image.jpg
+
+*/

@@ -46,13 +46,13 @@ const Home: NextPage = () => {
     data: [
       {
         id: 1,
-        name_ar: "الأساسية",
+        name_ar: "الأساسية / شهريا",
         name_en: "Basic",
         description_ar: "خطة اساسية",
         description_en: "basic",
         is_active: 1,
-        price: 50,
-        currency: "JD",
+        price: 5,
+        currency: "دينار أردني",
         interval: "month",
         created_at: null,
         updated_at: "2022-09-10T09:19:35.000000Z",
@@ -79,8 +79,8 @@ const Home: NextPage = () => {
             pivot: {
               feature_id: 2,
               plan_id: 1,
-              value_ar: "50",
-              value_en: "50",
+              value_ar: "30",
+              value_en: "30",
             },
           },
           {
@@ -92,8 +92,8 @@ const Home: NextPage = () => {
             pivot: {
               feature_id: 3,
               plan_id: 1,
-              value_ar: "غير مدعوم",
-              value_en: "not supported",
+              value_ar: " مدعوم",
+              value_en: " supported",
             },
           },
           {
@@ -105,8 +105,8 @@ const Home: NextPage = () => {
             pivot: {
               feature_id: 4,
               plan_id: 1,
-              value_ar: "25",
-              value_en: "25",
+              value_ar: "0",
+              value_en: "0",
             },
           },
 
@@ -114,13 +114,13 @@ const Home: NextPage = () => {
             id: "5",
             name_ar: "رسوم التجهيز لأول مرة",
             name_en: "Setup fees",
-            unit_ar: "JD",
+            unit_ar: "دينار أردني",
             unit_en: "JD",
             pivot: { 
               feature_id: 5,
               plan_id: 1,
-              value_ar: "25",
-              value_en: "25" },
+              value_ar: "5",
+              value_en: "5" },
           },
           {
             id: "6",
@@ -143,20 +143,20 @@ const Home: NextPage = () => {
             pivot: { 
               feature_id: 7,
               plan_id: 1,
-              value_ar: "الرد خلال اسبوع",
-              value_en: "within a week" },
+              value_ar: "متوفر",
+              value_en: "available" },
           },
         ],
       },
       {
         id: 2,
-        name_ar: "المتقدّمة",
+        name_ar: "المتقدّمة / شهريا",
         name_en: "Advanced",
         description_ar: "fgfd",
         description_en: "dfgdf",
         is_active: 1,
-        price: 150,
-        currency: "JD",
+        price: 15,
+        currency: "دينار أردني",
         interval: "year",
         created_at: null,
         updated_at: "2022-09-10T09:37:56.000000Z",
@@ -183,8 +183,8 @@ const Home: NextPage = () => {
             pivot: {
               feature_id: 2,
               plan_id: 2,
-              value_ar: "100",
-              value_en: "100",
+              value_ar: "60",
+              value_en: "60",
             },
           },
           {
@@ -209,8 +209,8 @@ const Home: NextPage = () => {
             pivot: {
               feature_id: 4,
               plan_id: 2,
-              value_ar: "10",
-              value_en: "10",
+              value_ar: "0",
+              value_en: "0",
             },
           },
 
@@ -218,13 +218,13 @@ const Home: NextPage = () => {
             id: "5",
             name_ar: "رسوم التجهيز لأول مرة",
             name_en: "Setup fees",
-            unit_ar: "JD",
+            unit_ar: "دينار أردني",
             unit_en: "JD",
             pivot: { 
               feature_id: 5,
               plan_id: 2,
-              value_ar: "0",
-              value_en: "0" },
+              value_ar: "5",
+              value_en: "5" },
           },
           {
             id: "6",
@@ -247,20 +247,22 @@ const Home: NextPage = () => {
             pivot: { 
               feature_id: 7,
               plan_id: 2,
-              value_ar: "الرد خلال يومين",
-              value_en: "within two days" },
+              value_ar: " مدعوم",
+              value_en: " supported",
+           
+             },
           },
         ],
       },
       {
         id: 3,
-        name_ar: "الممتازة",
-        name_en: "Premium",
+        name_ar: "الممتازة / سنويا",
+        name_en: "Yearely",
         description_ar: "اشتراك مميز",
         description_en: "perfect",
         is_active: 1,
-        price: 399,
-        currency: "JD",
+        price: 120,
+        currency: "دينار أردني",
         interval: "year",
         created_at: null,
         updated_at: "2022-09-10T09:47:46.000000Z",
@@ -313,8 +315,8 @@ const Home: NextPage = () => {
             pivot: {
               feature_id: 4,
               plan_id: 3,
-              value_ar: "5",
-              value_en: "5",
+              value_ar: "0",
+              value_en: "0",
             },
           },
 
@@ -322,13 +324,13 @@ const Home: NextPage = () => {
             id: "5",
             name_ar: "رسوم التجهيز لأول مرة",
             name_en: "Setup fees",
-            unit_ar: "JD",
+            unit_ar: "دينار أردني",
             unit_en: "JD",
             pivot: { 
               feature_id: 5,
               plan_id: 3,
-              value_ar: "0",
-              value_en: "0" },
+              value_ar: "5",
+              value_en: "5" },
           },
           {
             id: "6",
@@ -399,11 +401,16 @@ const Home: NextPage = () => {
                     </div>
                     <div className="plan-item-header-tools me-auto">
                       <span className="plan-price">
+                        <span className="plan-price">
+                          {" "}
+                          {item.price}
+                        </span>
+                        {" "}
                         <span className="plan-price-symbole">
                           {" "}
                           {item.currency}
-                        </span>{" "}
-                        {item.price}
+                        </span>
+                     
                       </span>
                     </div>
                   </div>
