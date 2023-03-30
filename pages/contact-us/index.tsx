@@ -9,12 +9,10 @@ import { useAppSelector } from "../../store/hooks";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Home: NextPage = () => {
-  const [state, handleSubmit] = useForm("xayvpoqn");
+  const [state, handleSubmit] = useForm("xwkjrlva");
   const [full_name, setFull_name] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  
   const { t } = useTranslation();
   const isDark = useAppSelector((state) => state.theme.type);
   return (
@@ -42,7 +40,7 @@ const Home: NextPage = () => {
         noteText={t("contact_us_details")}
       />
       <div className="sb-contact-us-form">
-        {state.succeeded && <>Thanks for your submission!</>}
+        
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <form onSubmit={handleSubmit}>
@@ -97,6 +95,10 @@ const Home: NextPage = () => {
                     <button className="btn butt-md butt-primary ml-auto">
                       {t("send_informations_text")}
                     </button>
+                    
+                  </div>
+                  <div className="alert alert-success">
+                       <strong>Success!</strong>   {state.succeeded && <>Thanks for your submission</>}
                   </div>
                 </div>
               </div>

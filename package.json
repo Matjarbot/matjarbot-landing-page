@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^7.4.0",
-    "@formspree/react": "^2.3.3",
+    "@formspree/react": "^2.4.1",
     "@react-google-maps/api": "^2.12.1",
     "@reduxjs/toolkit": "^1.8.5",
     "@trendyol-js/react-carousel": "^3.0.0",
