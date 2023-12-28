@@ -37,7 +37,6 @@ function LandingAbout() {
                 transition={{ duration: 1.3, type: "spring", delay: 0.33 }}
                 initial={{ opacity: 0, x: -60 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                
               >
                 {t("about_text_item_text2")}
               </motion.li>
@@ -62,6 +61,18 @@ function LandingAbout() {
               >
                 {t("about_text_item_text5")}
               </motion.li>
+
+              <a href={"#joinUs"}>
+                <motion.a
+                  transition={{ duration: 1.3, type: "spring", delay: 0.5 }}
+                  initial={{ x: -60, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  whileInView={{ y: 0, rotate: 0, opacity: 1 }}
+                  className="btn butt-primary butt-lg"
+                >
+                  {t("join_now")}
+                </motion.a>
+              </a>
             </ul>
           </div>
         </div>

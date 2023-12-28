@@ -435,7 +435,7 @@
 }
 
 .feature-inner {
-  padding: 50px 35px;
+  padding: 100px 35px;
 }
 @media (max-width: 768px) {
   .feature-inner {
@@ -475,9 +475,9 @@
 }
 
 .sb-landing-about {
-  background-color: rgba(236, 236, 236, 0.6509803922);
+  background-image: linear-gradient(to bottom, white, rgba(236, 236, 236, 0.6509803922));
   padding: 35px;
-  padding-bottom: 0;
+  padding-block: 100px;
 }
 .sb-landing-about .sb-about-img {
   height: 500px;
@@ -2984,6 +2984,13 @@ a:hover {
   color: #fff;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.dark .dart_text {
+  color: white;
+}
 .dark .sb-navbar {
   background-color: #141414;
 }
@@ -3001,6 +3008,9 @@ a:hover {
 }
 .dark .sb-navbar .sb-navbar-content .sb-navbar-left .sb-navbar-buttons {
   display: flex;
+}
+.dark .ant-spin-container {
+  background-color: black;
 }
 .dark .sb-hero {
   background-color: #111 !important;
@@ -3047,7 +3057,7 @@ a:hover {
   color: #fff;
 }
 .dark .sb-landing-about {
-  background-color: #030303;
+  background-image: linear-gradient(to bottom, black, #030303);
 }
 .dark .sb-landing-about .main-title {
   font-size: 23px;

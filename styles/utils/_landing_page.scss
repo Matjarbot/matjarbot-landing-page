@@ -342,7 +342,8 @@
 
 // Features Aside
 .feature-inner {
-  padding: 50px 35px;
+  padding: 100px 35px;
+
   @media (max-width: 768px) {
     padding: 20px;
   }
@@ -378,9 +379,9 @@
   }
 }
 .sb-landing-about {
-  background-color: #ecececa6;
+  background-image: linear-gradient(to bottom, white, #ecececa6);
   padding: 35px;
-  padding-bottom: 0;
+  padding-block: 100px;
   .sb-about-img {
     height: 500px;
   }
@@ -828,7 +829,7 @@
   }
 }
 
-// Verify Token Code Page 
+// Verify Token Code Page
 .otp-code-form {
   background-color: #fff;
   padding: 20px;

@@ -623,7 +623,7 @@ a {
         background-color: #f2f2f2;
       }
     }
-  
+
     &.light {
       .title {
         color: #333;
@@ -661,7 +661,6 @@ a {
         }
       }
     }
-
   }
 }
 // Center Heading
@@ -768,7 +767,7 @@ a {
         background-color: #f2f2f2;
       }
     }
-  
+
     &.light {
       .title {
         color: #f2f2f2;
@@ -1138,7 +1137,9 @@ a {
     }
   }
 }
-
+.cursor-pointer {
+  cursor: pointer;
+}
 // .img-chat {
 //   border-radius: 50%;
 //   margin: auto;

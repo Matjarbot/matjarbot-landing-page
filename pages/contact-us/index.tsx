@@ -8,7 +8,7 @@ import LandingLayout from "../../layouts/LandingLayout";
 import { useAppSelector } from "../../store/hooks";
 import { useForm, ValidationError } from "@formspree/react";
 
-const Home: NextPage = () => {
+const ContactUs: NextPage = () => {
   const [state, handleSubmit] = useForm("xwkjrlva");
   const [full_name, setFull_name] = useState("");
   const [email, setEmail] = useState("");
@@ -40,7 +40,6 @@ const Home: NextPage = () => {
         noteText={t("contact_us_details")}
       />
       <div className="sb-contact-us-form">
-        
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <form onSubmit={handleSubmit}>
@@ -57,7 +56,8 @@ const Home: NextPage = () => {
                     title={t("email_text")}
                     type="email"
                     name="email"
-                    value={email} handleChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                    handleChange={(e) => setEmail(e.target.value)}
                   />
                   <ValidationError
                     prefix={t("email_text")}
@@ -71,7 +71,8 @@ const Home: NextPage = () => {
                     minHeight={210}
                     name="message"
                     title={t("message_content_text")}
-                    value={message} handleChange={(e) => setMessage(e.target.value)}
+                    value={message}
+                    handleChange={(e) => setMessage(e.target.value)}
                   />
                   <ValidationError
                     prefix={t("message_content_text")}
@@ -95,11 +96,11 @@ const Home: NextPage = () => {
                     <button className="btn butt-md butt-primary ml-auto">
                       {t("send_informations_text")}
                     </button>
-                    
                   </div>
-                  <div className="alert alert-success">
-                       <strong>Success!</strong>   {state.succeeded && <>Thanks for your submission</>}
-                  </div>
+                  {/* <div className="alert alert-success">
+                    <strong>Success!</strong>{" "}
+                    {state.succeeded && <>Thanks for your submission</>}
+                  </div> */}
                 </div>
               </div>
             </form>
@@ -110,4 +111,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default ContactUs;

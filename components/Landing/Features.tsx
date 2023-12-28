@@ -1,17 +1,9 @@
-import {
-  useScroll,
-  motion,
-  MotionValue,
-  useTransform,
-} from "framer-motion";
+import { useScroll, motion, MotionValue, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import CenterHeading from "../CenterHeading";
 import { useAppSelector } from "../../store/hooks";
 
-function useParallax(value: MotionValue<number>, distance: number) {
-  return useTransform(value, [0, 1.52], [-distance, distance]);
-}
 function Features() {
   const ref = useRef(null);
   const isDark = useAppSelector((state) => state.theme.type);
@@ -19,8 +11,7 @@ function Features() {
   const { scrollYProgress } = useScroll({ target: ref });
   //const scaleX = useSpring(scrollYProgress);
   const { t } = useTranslation();
-  const z = useParallax(scrollYProgress, 100);
-  const y = useParallax(scrollYProgress, 300);
+
   return (
     <div className="feature-inner">
       <CenterHeading title={t("why_matjarbot_text")} />
@@ -34,7 +25,7 @@ function Features() {
           >
             <div style={{ overflow: "hidden" }}>
               <motion.img
-                src={(isDark == 'dark') ? "/721_invert.svg" : "/721.svg"}
+                src={isDark == "dark" ? "/721_invert.svg" : "/721.svg"}
                 height={100}
                 transition={{ duration: 2, type: "spring", delay: 0.2 }}
                 initial={{ opacity: 0, rotate: 30 }}
@@ -79,7 +70,7 @@ function Features() {
           >
             <div style={{ overflow: "hidden" }}>
               <motion.img
-                src={(isDark == 'dark') ? "/760_invert.svg" : "/760.svg"}
+                src={isDark == "dark" ? "/760_invert.svg" : "/760.svg"}
                 height={100}
                 transition={{ duration: 2, type: "spring", delay: 0.2 }}
                 initial={{ opacity: 0, rotate: 30 }}
@@ -131,7 +122,7 @@ function Features() {
           >
             <div style={{ overflow: "hidden" }}>
               <motion.img
-                src={(isDark == 'dark') ? "/1020_invert.svg" : "/1020.svg"}
+                src={isDark == "dark" ? "/1020_invert.svg" : "/1020.svg"}
                 height={100}
                 transition={{ duration: 2, type: "spring", delay: 0.2 }}
                 initial={{ opacity: 0, rotate: 30 }}

@@ -1,6 +1,6 @@
 import { Drawer } from "antd";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaBars, FaLanguage } from "react-icons/fa";
@@ -26,38 +26,20 @@ function LandingNavbar() {
     setVisible(false);
   };
   const dispatch: any = useAppDispatch();
-  const navs = [
-    {
-      id: 1,
-      name: t("main"),
-      icon: "home",
-      href: "/",
-    },
-    {
-      id: 2,
-      name: t("plan_text"),
-      icon: "view_cozy",
-      href: "/plans",
-    },
-    {
-      id: 11,
-      name: t("team_work_text"),
-      icon: "group",
-      href: "/team-work",
-    },
-    {
-      id: 4,
-      name: t("after_sales_service_text"),
-      icon: "support_agent",
-      href: "/services",
-    },
-    {
-      id: 5,
-      name: t("contact_us_text"),
-      icon: "chat",
-      href: "/contact-us",
-    },
-  ];
+  // const navs = [
+  //   // {
+  //   //   id: 1,
+  //   //   name: t("main"),
+  //   //   icon: "home",
+  //   //   href: "/",
+  //   // },
+  //   // {
+  //   //   id: 2,
+  //   //   name: t("join_us_text"),
+  //   //   icon: "view_cozy",
+  //   //   href: "/join-us",
+  //   // },
+  // ];
   const toggleDarkMode = (checked: boolean) => {
     Cookies.set("dark_mode", checked.toString());
     setDarkMode(checked);
@@ -78,8 +60,14 @@ function LandingNavbar() {
         onClose={onClose}
         visible={visible}
       >
+        <h6
+          className="mt-2 mx-2 dart_text cursor-pointer"
+          onClick={() => Router.push("/")}
+        >
+          {t("matjar_bot")}
+        </h6>
         <ul className="sb-mobile-aside-nav">
-          {navs &&
+          {/* {navs &&
             navs.map((e: any) => {
               return (
                 <li key={e.id} className={e.href == path.route ? "active" : ""}>
@@ -100,7 +88,7 @@ function LandingNavbar() {
                   </Link>
                 </li>
               );
-            })}
+            })} */}
         </ul>
         <Link href={"/join-us"}>
           <a
@@ -133,8 +121,15 @@ function LandingNavbar() {
               />
             </a>
           </Link>
+          <h6
+            className="mt-2 mx-2 dart_text cursor-pointer"
+            onClick={() => Router.push("/")}
+          >
+            {t("matjar_bot")}
+          </h6>
+
           <ul className="sb-navbar-nav">
-            {navs &&
+            {/* {navs &&
               navs.map((e: any) => {
                 return (
                   <li
@@ -158,7 +153,7 @@ function LandingNavbar() {
                     </Link>
                   </li>
                 );
-              })}
+              })} */}
           </ul>
         </div>
         <div className="sb-navbar-left">
@@ -191,13 +186,13 @@ function LandingNavbar() {
               </button>
               {switchLangs && <LanguageMenu setSwitchLangs={setSwitchLangs} />}
             </li>
-            <li className="hidden-max-768">
+            {/* <li className="hidden-max-768">
               <Link href={"/join-us"}>
                 <a className="btn butt-xs mx-1 butt-primary">
                   {t("join_us_text")}
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

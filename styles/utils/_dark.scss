@@ -1,4 +1,7 @@
 .dark {
+  .dart_text {
+    color: white;
+  }
   .sb-navbar {
     background-color: #141414;
     .sb-navbar-content {
@@ -28,6 +31,9 @@
         }
       }
     }
+  }
+  .ant-spin-container {
+    background-color: black;
   }
   // Hero
   .sb-hero {
@@ -92,7 +98,8 @@
     }
   }
   .sb-landing-about {
-    background-color: #030303;
+    background-image: linear-gradient(to bottom, black, #030303);
+
     .main-title {
       font-size: 23px;
       color: #fff;

@@ -11,7 +11,7 @@ function Hero() {
 
   return (
     <motion.div
-      className="sb-hero"
+      className="sb-hero mb-5"
       style={{
         backgroundImage:
           isDark == "dark"
@@ -20,7 +20,6 @@ function Hero() {
       }}
     >
       <div className="sb-hero-content">
-        
         <div className="row">
           <div className="col-lg-5">
             <BotChat />
@@ -47,7 +46,7 @@ function Hero() {
                   {t("whats_matjarbot_details")}
                 </motion.p>
                 <div className="butt-inner" style={{ overflow: "hidden" }}>
-                  <Link href={"/join-us"}>
+                  <a href={"#joinUs"}>
                     <motion.a
                       transition={{ duration: 1, type: "spring", delay: 0.7 }}
                       initial={{ y: 800, rotate: -80, opacity: 0 }}
@@ -57,7 +56,7 @@ function Hero() {
                     >
                       {t("join_us_text")}
                     </motion.a>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
