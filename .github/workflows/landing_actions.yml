@@ -4,3 +4,17 @@ on:
   push:
     branches:
       - main
+jobs:
+  pm2-configuration:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 #checkout code from repository, so we code downloaded in runner.
+      - name: install modules
+        run: npm i
+      - name: build landing
+        run: npm run build
+      - name: serve landing
+        run: pm2 start npm --  start
+      - name: rename landing in pm2
+        run: pm2 restart npm --name landing
