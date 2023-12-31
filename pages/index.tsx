@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         </ScrollingCarousel>
       </div> */}
 
-      <LandingAbout />
+      {/* <LandingAbout /> */}
       <Features />
 
       <HeaderTitle title={t("team_work_text")} />
