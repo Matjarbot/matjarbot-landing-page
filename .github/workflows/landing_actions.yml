@@ -22,7 +22,7 @@ jobs:
         with:
           key: ${{ secrets.MATJAR_LANDING_SECRET }}
           known_hosts: 'unnecessary'
-      - name: ADDING KNOWNS HOSTS 
+      - name: ADDING KNOWN HOSTS 
         run: ssh-keyscan -H ${{ secrets.SSH_LANDING_HOST }} >> ~/.ssh/known_hosts
 
       - name: Move BUILD FOLDER TO SERVER 
