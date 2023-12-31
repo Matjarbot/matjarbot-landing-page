@@ -19,8 +19,7 @@ const ContactUs: NextPage = () => {
     <LandingLayout>
       <Head>
         <title>{t("contact_us_text")} - matjarbot</title>
-      </Head>
-      <HeaderTitle
+      </Head> <HeaderTitle
         title={t("contact_us_text")}
         tools={
           <>
