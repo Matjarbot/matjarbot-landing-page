@@ -4,12 +4,11 @@ on:
   push:
     branches:
       - main
+
 jobs:
   pm2-configuration:
-
     runs-on: ubuntu-latest
     steps:
-    
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
@@ -19,7 +18,7 @@ jobs:
       - name: build landing
         run: npm run build
       - name: serve landing
-        run: pm2 start npm --  start
+        run: pm2 start npm -- start
       - name: rename landing in pm2
         run: pm2 restart npm --name landing
       - name: Install SSH Key
@@ -29,4 +28,10 @@ jobs:
           known_hosts: 'unnecessary'
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.SSH_LANDING_HOST }} >> ~/.ssh/known_hosts
-
+      - name: Error Handling
+        run: |
+          pm2_status=$?
+          if [ $pm2_status -ne 0 ]; then
+            echo "Failed to start PM2. Exiting..."
+            exit $pm2_status
+          fi
