@@ -17,13 +17,27 @@ jobs:
         run: npm i
       - name: build landing
         run: npm run build
-      - name: executing remote ssh commands using ssh key
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.MATJAR_LANDING_SECRET }}
+          known_hosts: 'unnecessary'
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_LANDING_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy with rsync
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.next/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/root/matjarbot-landing-page/.next/
+        
+      - name: restart the server
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_LANDING_HOST }}
           username: ${{ secrets.LANDING_USER }}
           key: ${{ secrets.MATJAR_LANDING_SECRET }}
-          script: sh scripts/deploy_landing.sh
+          script: |
+            cd matjarbot-landing-page
+            npm start
+            pm2 restart landing
 
       - name: Print Message
         run: echo "Workflow completed successfully!"
