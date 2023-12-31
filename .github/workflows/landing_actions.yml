@@ -35,6 +35,6 @@ jobs:
           username: ${{ secrets.LANDING_USER }}
           key: ${{ secrets.MATJAR_LANDING_SECRET }}
           script: |
-            chmod -R a+x / 
+            chmod -R a+x .
             pm2 restart landing
 
