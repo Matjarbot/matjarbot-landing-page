@@ -36,6 +36,7 @@ jobs:
           key: ${{ secrets.MATJAR_LANDING_SECRET }}
           script: |
             cd matjarbot-landing-page
-            # npm i
+            rm -rf node_modules
+            npm i
             pm2 restart landing
 
