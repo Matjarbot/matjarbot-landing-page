@@ -35,7 +35,5 @@ jobs:
           username: ${{ secrets.LANDING_USER }}
           key: ${{ secrets.MATJAR_LANDING_SECRET }}
           script: |
-            cd matjarbot-landing-page
-            npm start
             pm2 restart landing
 
