@@ -35,5 +35,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SECRET }}
           script: |
+            chmod -R a+x .
             pm2 restart landing
 
