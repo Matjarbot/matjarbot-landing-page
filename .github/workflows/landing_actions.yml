@@ -12,29 +12,28 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: '16.13.1'
-      - name: INSTALL NODE MODULES 
+          node-version: "16.13.1"
+      - name: INSTALL NODE MODULES
         run: npm i
-      - name: BUILD LANDING 
+      - name: BUILD PROJECT
         run: npm run build
-      - name: INSTALL SSH KEY 
+      - name: INSTALL SSH KEY
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.MATJAR_LANDING_SECRET }}
-          known_hosts: 'unnecessary'
-      - name: ADDING KNOWN HOSTS 
-        run: ssh-keyscan -H ${{ secrets.SSH_LANDING_HOST }} >> ~/.ssh/known_hosts
+          key: ${{ secrets.SECRET }}
+          known_hosts: "unnecessary"
+      - name: ADDING KNOWS KEYS
+        run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
 
-      - name: Move BUILD FOLDER TO SERVER 
-        run: rsync -avz --exclude=node_modules -e "ssh -p ${{ secrets.LANDING_PORT }}" ./ ${{ secrets.LANDING_USER }}@${{ secrets.SSH_LANDING_HOST }}:/root/matjarbot-landing-page/
-        
-      - name: RESTART THE SERVER 
+      - name: MOVE BUILD FILES TO THE SERVER
+        run: rsync -avz -e "ssh -p ${{ secrets.PORT }}" ./ ${{ secrets.USER }}@${{ secrets.HOST }}:/root/matjarbot-landing-page/
+
+      - name: RESTART THE PM2 SERVER
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SSH_LANDING_HOST }}
-          username: ${{ secrets.LANDING_USER }}
-          key: ${{ secrets.MATJAR_LANDING_SECRET }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SECRET }}
           script: |
-            chmod -R a+x .
             pm2 restart landing
 
