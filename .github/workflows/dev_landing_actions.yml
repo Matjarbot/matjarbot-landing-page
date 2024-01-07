@@ -1,9 +1,9 @@
-name: Landing
+name: Dev_Landing
 
 on:
   push:
     branches:
-      - main
+      - development
 
 jobs:
   pm2-configuration:
@@ -15,12 +15,19 @@ jobs:
           node-version: "16.13.1"
       - name: INSTALL NODE MODULES
         run: npm i
-      - name: REMOVE ANY UNNECCARY PORT
+      - name: CHANGE LANDING PORT
         run: |
-          sed -i 's/"start": "next start -p [0-9]\+"/"start": "next start"/' package.json
-          echo "Port deleted successfully! 🚀🚀🚀🚀🚀🚀"
+          new_port="4000"  
+          json_file="package.json"
+          if grep -q '"start": "next start' "$json_file"; then
+            sed -i -E 's/"start": "next start.*-p [0-9]+/"start": "next start -p '"$new_port"'"/' "$json_file"
+            echo "Port added successfully! 🚀🚀🚀🚀🚀🚀"
+          else
+            sed -i -E 's/"start": "next start"/"start": "next start -p '"$new_port"'"/' "$json_file"
+            echo "Port updated successfully! 🚀🚀🚀🚀🚀🚀"
+          fi
       - name: CHAGNE PROJECT UTILS
-        run: echo -e "export const isProduction = true;" > projectUtils.js
+        run: echo -e "export const isProduction = false;" > projectUtils.js
       - name: BUILD PROJECT
         run: npm run build
       - name: INSTALL SSH KEY
@@ -32,7 +39,7 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
 
       - name: MOVE BUILD FILES TO THE SERVER
-        run: rsync -avz -e "ssh -p ${{ secrets.PORT }}" ./ ${{ secrets.USER }}@${{ secrets.HOST }}:/root/matjarbot-landing-page/
+        run: rsync -avz -e "ssh -p ${{ secrets.PORT }}" ./ ${{ secrets.USER }}@${{ secrets.HOST }}:/root/dev/matjarbot-landing-page/
 
       - name: RESTART THE PM2 SERVER
         uses: appleboy/ssh-action@master
@@ -41,5 +48,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SECRET }}
           script: |
+            cd dev/matjarbot-landing-page
             chmod -R a+x .
-            pm2 restart landing
+            pm2 restart dev-landing
