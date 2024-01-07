@@ -20,10 +20,10 @@ jobs:
           new_port="4000"  
           json_file="package.json"
           if grep -q '"start": "next start' "$json_file"; then
-            sed -i -E 's/"start": "next start.*-p [0-9]+/"start": "next start -p '"$new_port"'"/' "$json_file"
+            sed -i '' -E 's/"start": "next start.*/"start": "next start -p '"$new_port"'",/' "$json_file"
             echo "Port added successfully! 🚀🚀🚀🚀🚀🚀"
           else
-            sed -i -E 's/"start": "next start"/"start": "next start -p '"$new_port"'"/' "$json_file"
+            sed -i '' -E 's/"start": "next start"/"start": "next start -p '"$new_port"'",/' "$json_file"
             echo "Port updated successfully! 🚀🚀🚀🚀🚀🚀"
           fi
       - name: CHAGNE PROJECT UTILS
