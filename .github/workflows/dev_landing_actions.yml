@@ -17,15 +17,17 @@ jobs:
         run: npm i
       - name: CHANGE LANDING PORT
         run: |
-          new_port="4000"  
+          new_port="4000"
           json_file="package.json"
           if grep -q '"start": "next start' "$json_file"; then
-            sed -i '' -E 's/"start": "next start.*/"start": "next start -p '"$new_port"'",/' "$json_file"
+            sed -i.bak -E 's/"start": "next start.*/"start": "next start -p '"$new_port"'",/' "$json_file"
             echo "Port added successfully! 🚀🚀🚀🚀🚀🚀"
           else
-            sed -i '' -E 's/"start": "next start"/"start": "next start -p '"$new_port"'",/' "$json_file"
+            sed -i.bak -E 's/"start": "next start"/"start": "next start -p '"$new_port"'"/' "$json_file"
             echo "Port updated successfully! 🚀🚀🚀🚀🚀🚀"
           fi
+          rm -f "$json_file.bak"
+
       - name: CHAGNE PROJECT UTILS
         run: echo -e "export const isProduction = false;" > projectUtils.js
       - name: BUILD PROJECT
