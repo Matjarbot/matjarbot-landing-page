@@ -58,6 +58,11 @@ function Hero() {
                     </motion.a>
                   </a>
                 </div>
+                <a
+        href="https://drive.google.com/file/d/1BpGjApufc8ePlt_f0zpyaysQh_Gddo1w/view?usp=sharing"
+      >
+            <button type="button" className="btn btn-warning"   app-release>  حمل تطبيق متجربوت الان !   </button>
+            </a>
               </div>
             </div>
           </div>
